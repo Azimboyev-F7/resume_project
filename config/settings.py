@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'main',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://e74b-213-230-92-104.ngrok-free.app',  # Replace with your specific ngrok URL
+]
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,7 +62,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR.joinpath('templates')],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

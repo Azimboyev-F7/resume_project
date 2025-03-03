@@ -42,7 +42,7 @@
 
         <div class="site-navigation text-center">
 
-            <a href="{% url 'main:index-2' %}" class="d-block text-center float-left logo">AF</a>
+            <a href="{% url 'orbit:index-2' %}" class="d-block text-center float-left logo">AF</a>
 
 
             <ul class="js-clone-nav ml-0 pl-0 d-none d-lg-inline-block site-menu mx-auto text-center">
@@ -769,29 +769,34 @@
             <div class="col-lg-7">
 
 
-                <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                <form class="contact-form" data-aos="fade-up" data-aos-delay="100" method="post">
+                    {% csrf_token %}
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label class="" for="fname">First name</label>
-                                <input type="text" class="form-control" id="fname">
+                                <label class="form-label" for="fname">First name</label>
+{#                                <input type="text" class="form-control" id="fname">#}
+                                {{ form.first_name }}
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label class="" for="lname">Last name</label>
-                                <input type="text" class="form-control" id="lname">
+                                <label class="form-label" for="lname">Last name</label>
+{#                                <input type="text" class="form-control" id="lname">#}
+                                {{ form.last_name }}
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="" for="email">Email address</label>
-                        <input type="email" class="form-control" id="email">
+                        <label class="form-label" for="email">Email address</label>
+{#                        <input type="email" class="form-control" id="email">#}
+                        {{ form.email }}
                     </div>
 
                     <div class="form-group">
                         <label class="" for="message">Message</label>
-                        <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+{#                        <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>#}
+                        {{ form.message }}
                     </div>
 
                     <button type="submit" class="btn btn-primary">Send Message</button>
