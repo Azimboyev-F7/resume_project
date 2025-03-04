@@ -1,16 +1,16 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import User
-from .forms import UserForm
+from .models import Recieve
+from .forms import Recieve
 # Create your views here.
 
 
 def index(request):
-    users = User.objects.all()
-    form = UserForm()
+    users = Recieve.objects.all()
+    form = Recieve()
 
     if request.method == "POST":
-        form = UserForm(request.POST)
+        form = Recieve(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, "Message sent successfully")
