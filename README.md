@@ -1,6 +1,6 @@
 # 🚀 My Developer Portfolio  
 
-Welcome to my digital CV! 👋 I'm [Your Name], a passionate **Python/Django Developer** who loves building scalable web applications.  
+Welcome to my digital CV! 👋 I'm Faxriyor, a passionate **Python/Django Developer** who loves building scalable web applications.  
 
 ## 🔥 Features  
 ✅ User authentication (Login, Signup)  
