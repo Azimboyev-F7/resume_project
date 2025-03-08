@@ -12,6 +12,6 @@ Welcome to my digital CV! 👋 I'm Faxriyor, a passionate **Python/Django Develo
 
 ## 👨‍💻 About Me  
 🎯 **Software Developer** specializing in **Python & Django**  
-📍 Based in [Your Location]  
+📍 Based in Uzbekistan  
 💡 Passionate about **backend development, APIs, and automation**  
 🚀 Always learning and improving my craft 
