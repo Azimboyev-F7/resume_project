@@ -1,20 +1,21 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,reverse
 from django.contrib import messages
 from .models import Recieve
-from .forms import Recieve
+from .forms import RecieveForm
 # Create your views here.
 
 
 def index(request):
     users = Recieve.objects.all()
-    form = Recieve()
+    form = RecieveForm()
 
     if request.method == "POST":
-        form = Recieve(request.POST)
+        form = RecieveForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, "Message sent successfully")
-            return redirect("orbit:index")
+            reverse_url = reverse('orbit:index-2')
+            return redirect(reverse_url)
     ctx = {
         'form': form,
         "users": users,
@@ -22,15 +23,15 @@ def index(request):
     return render(request, 'orbit/index.html', ctx)
 
 def index2(request):
-    users = User.objects.all()
-    form = UserForm()
+    users = Recieve.objects.all()
+    form = RecieveForm()
 
     if request.method == "POST":
-        form = UserForm(request.POST)
+        form = RecieveForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, "Message sent successfully")
-            return redirect("orbit:index")
+            return redirect("orbit:index-2")
     ctx = {
         'form': form,
         'users': users,
