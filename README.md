@@ -1,1 +1,17 @@
-This repostory is aboute resume project where you can able to enter the work you can use that as a CV
+# 🚀 My Developer Portfolio  
+
+Welcome to my digital CV! 👋 I'm Faxriyor, a passionate **Python/Django Developer** who loves building scalable web applications.  
+
+## 🔥 Features  
+✅ User authentication (Login, Signup)  
+✅ Job posting & application system  
+✅ Search and filter job listings  
+✅ Admin panel for job management  
+✅ Responsive design  
+
+
+## 👨‍💻 About Me  
+🎯 **Software Developer** specializing in **Python & Django**  
+📍 Based in Uzbekistan  
+💡 Passionate about **backend development, APIs, telegram-bot, and automation**  
+🚀 Always learning and improving my craft 
